@@ -712,10 +712,16 @@ footer {
             width: 100%;
             flex-direction: column;
             padding-bottom: 2rem;
+            align-items: center;
           }
 
           .project, .projects img {
             width: 240px ;
             height: 200px ;
+          }
+
+          .fade-in.active #about, #projects, #contact{
+            height: 100%;
+            width:100%;
           }
       }

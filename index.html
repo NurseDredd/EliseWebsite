@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Elise Philipsson - Frontend Developer</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="home-sci" id="home-sci">
+        <a href="https://www.linkedin.com/in/elise-philipsson/"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://github.com/NurseDredd"
+          ><i class="bx bxl-github"></i
+        ></a>
+      </div>
+      <nav class="navbar" id="navbar">
+        <button class="close-btn hidden">&times;</button>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <i class="bx bx-menu"></i>
+      </div>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <div class="home-content">
+            <div class="textContainer">
+              <h1></h1>
+              <h2></h2>
+              <h4></h4>
+            </div>
+            <div class="btn-box">
+              <a href="#projects">Projects</a>
+              <a class="mailtoui" href="mailto:elise.philipsson@gmail.com"
+                >Contact</a
+              >
+            </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="fade-in" id="about">
+          <div class="profilePic">
+            <div class="imgContainer">
+              <img src="assets/elisePortfolio.jpg" class="profileImg" alt="" />
+            </div>
+          </div>
+          <!-- Tab links -->
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openTab(event, 'aboutTab')"
+              id="defaultOpen"
+            >
+              About
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'cvTab')">
+              CV
+            </button>
+          </div>
+          <div id="aboutTab" class="tabcontent">
+            <p class="aboutText">
+              Stockholm based <b>Frontend Developer</b>, dedicated to creating
+              user-friendly, responsive, accessible and beautiful digital
+              solutions. My studies at Nackademin have provided me with skills
+              in <b>HTML5</b>, <b>CSS3</b>, <b>JavaScript</b>, and proficiency
+              with tools such as <b>Figma</b> and <b>VS Code</b>. I am also
+              experienced with version control systems like <b>Git</b> and
+              <b>GitHub</b>.
+            </p>
+            <p class="aboutText">
+              I am continuously expanding my knowledge by learning modern
+              frameworks and libraries like <b>React</b>, <b>Redux</b>, and
+              <b>Next.js</b>, with plans to delve into <b>Vue.js</b> and
+              <b>TypeScript</b>. I am committed to ensuring accessibility in all
+              digital solutions I develop.
+            </p>
+            <p class="aboutText">
+              My background as a <b>registered nurse</b> has sharpened my
+              ability to stay organized, detail-oriented, and proactive. This
+              experience has also enhanced my skills in teamwork, handling
+              diverse needs, and navigating in unexpected situations. 
+            </p>
+            <p class="aboutText"></p>
+              <i>Currently available for a 5-month internship starting at Dec 9th 2024.</i>
+            </p>
+            <div class="stack">
+              <ul>
+                <li><i class="fab fa-html5"></i> HTML5</li>
+                <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                <li><i class="fab fa-figma"></i> Figma</li>
+                <li><i class="fab fa-github"></i> Github</li>
+                <li><i class="fab fa-js"></i> JavaScript</li>
+                <li>Next.js</li>
+                <li><i class="fa-brands fa-react"></i> React</li>
+                <li>CMS</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="cvTab" class="tabcontent">
+            <img src="assets/CVallmäncrop.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="fade-in" id="projects">
+          <h3>Projects</h3>
+          <div class="projectsContainer1 fade-in">
+            <div class="project">
+              <img src="assets/momento.png" alt="Momento" />
+              <div class="overlay">
+                <a href="https://dieseldanno.github.io/momento/" target="_blank" class="overlay-link">
+                <p class="text">
+                  Productivity app: login, todos,
+                  habit-tracker and Pomodoro timer.
+                  <br>
+                  Collaborators: Danno Tharmarajah, Minna Nordlund
+                  <br>
+                 <i class="fas fa-external-link-alt"></i>
+                </p></a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img
+                src="assets/figmaprototype.png"
+                alt="Figma-prototype for webshop"
+              />
+              <div class="overlay">
+                <a href="https://www.figma.com/design/Muv5suySuDCyPDNm0OQ2Ky/ElisePhilipsson-Grafik-FEND23?node-id=0-1&t=pJsdpdVu9uHZRfkh-1" target="_blank" class="overlay-link">
+                <p class="text">Figma webshop prototype 
+                  <br>
+                 <i class="fas fa-external-link-alt"></i></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="project">
+              <img src="assets/quiz.png" alt="Survival strategy quiz" />
+              <div class="overlay">
+                <a href="https://nursedredd.github.io/Survival-Strategy-Quiz/" target="_blank" class="overlay-link">
+                <p class="text">
+                  Survival strategy quiz - Test your survival skills
+                  <br>
+                 <i class="fas fa-external-link-alt"></i>
+                </p>
+              </a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/themist.png" alt="The Mist" />
+              <div class="overlay">
+                <a href="https://dieseldanno.github.io/test-projekt/" target="_blank" class="overlay-link">
+                <p class="text">
+                  The Mist Perfumery - Fictive perfumery webshop
+                  <br>
+                  Collaborator: Danno Tharmarajah
+                  <br>
+                 <i class="fas fa-external-link-alt"></i>
+                </p>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="fade-in" id="contactContent">
+          <h3>Contact</h3>
+          <p>Feel free to send me a message!</p>
+          <a class="mailtoui" href="mailto:elise.philipsson@gmail.com">Get in touch</a>
+      </section>
+    </main>
+    <footer id="footer">Copyright @ Elise Philipsson 2024</footer>
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+  </body>
+</html>
